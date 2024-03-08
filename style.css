@@ -111,6 +111,49 @@ main{
     font-weight: 700;
 }
 
+/* features styles */
+
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.features-content .card{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 40px;
+    color: #FFF;
+    width: 340px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0px;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.features-img img{
+    height: 90%;
+    margin-left: 90px;
+}
+
 /* facts styles */
 
 .facts-card-container{
@@ -159,6 +202,23 @@ main{
     height: 50px;
 }
 
+/* footer styles */
+
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    border: 0;
+    width: 80%;
+    height: 100px;
+    padding-top: 40px;
+    margin: 150px auto;
+}
+footer p{
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
 
 
 /* Media queries */
@@ -169,8 +229,10 @@ main{
     }
     nav,
     .teams-container,
+    .features,
     .facts-card-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    footer
     {
         flex-direction: column;
     }
@@ -183,6 +245,13 @@ main{
         padding-right: 20px;
         padding-left: 20px;
     }
+    .features-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        position: static;
+    }
     .facts-card-container{
         gap: 20px;
     }
@@ -192,8 +261,10 @@ main{
         padding: 40px;
     }
     nav,
+    .features,
     .facts-card-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    footer
     {
         flex-direction: column;
     }
@@ -202,6 +273,10 @@ main{
     } 
     .teams-images{
         margin-top: 7.5%;
+    }
+    .features-img img{
+        width: 100%;
+        margin-left: 0;
     }
     .facts-card-container{
         gap: 20px;
